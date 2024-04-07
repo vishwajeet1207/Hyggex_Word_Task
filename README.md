@@ -7,7 +7,7 @@ This Node.js application provides an API for managing user data in a MongoDB dat
 https://hyggex-word-task.vercel.app/random
 
 ### Check if a user with a given name exists :-
-https://hyggex-word-task.vercel.app/check_existence?name=MNQ
+https://hyggex-word-task.vercel.app/check_existence?name=MNQ 
 
 ### Get users above a certain age :-
 https://hyggex-word-task.vercel.app/above_age?age=30
