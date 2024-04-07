@@ -33,7 +33,7 @@ exports.getRandomUser = async (req, res) => {
 // Controller to check user existence
 exports.checkUserExistence = async (req, res) => {
   try {
-    const { name } = req.query;
+    const { name } = req.body;
     const user = await User.findOne({ name });
     res.json({ exists: !!user });
   } catch (err) {
@@ -44,7 +44,7 @@ exports.checkUserExistence = async (req, res) => {
 // Controller to get users above a certain age
 exports.getUsersAboveAge = async (req, res) => {
   try {
-    const { age } = req.query;
+    const { age } = req.body;
     const users = await User.find({ dob: { $lte: new Date(new Date().getFullYear() - age, 0, 1) } });
     res.json(users);
   } catch (err) {
