@@ -12,5 +12,5 @@ https://hyggex-word-task.vercel.app/check_existence?name=MNQ
 ### Get users above a certain age :-
 https://hyggex-word-task.vercel.app/above_age?age=30
 
-### Get an array of names of all users :- 
+### Get an array of names of all users :-  
 https://hyggex-word-task.vercel.app/names
