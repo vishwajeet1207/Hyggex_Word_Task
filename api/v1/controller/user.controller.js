@@ -4,7 +4,7 @@ const User = require('../models/user.model');
 // Controller to store user data
 exports.createUser = async (req, res) => {
   try {
-    const { name, dob, location } = req.query;
+    const { name, dob, location } = req.body;
     const user = new User({
       name,
       dob,
