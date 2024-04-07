@@ -33,7 +33,7 @@ exports.getRandomUser = async (req, res) => {
 // Controller to check user existence
 exports.checkUserExistence = async (req, res) => {
   try {
-     const { name } = req.query;
+    const { name } = req.query;
     const user = await User.findOne({ name });
     res.json({ exists: !!user });
   } catch (err) {
